@@ -12,6 +12,7 @@ import { SharedModule } from '../shared/shared.module';
 import {ComponentsModule} from '../components/components.module';
 
 import {RouterModule} from '@angular/router';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 
 
@@ -20,13 +21,15 @@ import {RouterModule} from '@angular/router';
      DashboardComponent,
      ProgressComponent,
      Grafica1Component,
-     PagesComponent    
+     PagesComponent,
+     AcountSettingsComponent    
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AcountSettingsComponent
   ],
   imports: [
     FormsModule,
