@@ -26,9 +26,16 @@
                               </span>
                         </span>
                     </a>
+                    <!--routerLinkActive cuando matchea la ruta que estoy parada con el 
+                    link lo deja como activo , pero matchea con el raiz tambien 
+                    por eso se usa el 
+                -->
                     <ul aria-expanded="false" class="collapse">
                         <li *ngFor="let sub of item.submenu">
-                            <a [routerLink]="sub.url">{{sub.titulo}} </a>
+                            <a [routerLink]="sub.url"
+                            routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact:true}"
+                            >{{sub.titulo}} </a>
                         </li>
                        
                     </ul>

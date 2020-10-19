@@ -13,6 +13,8 @@ import {ComponentsModule} from '../components/components.module';
 
 import {RouterModule} from '@angular/router';
 import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -22,14 +24,18 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
      ProgressComponent,
      Grafica1Component,
      PagesComponent,
-     AcountSettingsComponent    
+     AcountSettingsComponent,
+     PromesasComponent,
+     RxjsComponent    
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    AcountSettingsComponent
+    AcountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   imports: [
     FormsModule,

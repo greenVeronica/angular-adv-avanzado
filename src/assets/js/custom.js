@@ -87,6 +87,7 @@ const customInitFunction=()=>{
         // ============================================================== 
         // Auto select left navbar
         // ============================================================== 
+        /* NO LO HAREMOS DESDE ACA lo haremos con el routerlink active
         $(function() {
             var url = window.location;
             var element = $('ul#sidebarnav a').filter(function() {
@@ -100,7 +101,7 @@ const customInitFunction=()=>{
                 }
             }
     
-        });
+        });*/
         // ============================================================== 
         //tooltip
         // ============================================================== 
