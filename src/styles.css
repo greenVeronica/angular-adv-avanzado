@@ -6,6 +6,14 @@
     -webkit-animation-fill-mode:both;
     animation-fill-mode:both}
 
-#themecolors .selector{/*elijo todos de clase selector dentro del themecolor*/
+#themecolors .selector, .cursor{/*elijo todos de clase selector dentro del themecolor*/
 cursor: pointer;
+}
+
+
+#google-btn{
+    align-items: center;
+    justify-content:center;
+    display:flex;
+    text-align: center;
 }

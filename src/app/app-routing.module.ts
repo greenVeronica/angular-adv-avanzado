@@ -11,7 +11,8 @@ const routes: Routes = [
   // path: '/dashboard' pagerouting
   // path: '/auth' Authrouting
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-  {path: '**', component: NopagefoundComponent}// cualquier otra direccion va al componente
+  {path: '**', component: NopagefoundComponent}
+  // cualquier otra direccion va al componente
 
   ];
 

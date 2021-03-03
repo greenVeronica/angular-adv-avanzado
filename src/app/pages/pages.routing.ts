@@ -7,14 +7,17 @@ import { ProgressComponent } from './progress/progress.component';
 import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { AuthGuard } from '../guard/auth.guard';
 
 
 const routes: Routes = [
     // quiero que las rutas comiencen con dashboard
     // para que quede todo dentro del menu dashboard
     // una vez autentificado
-    {path: 'dashboard' , component: PagesComponent,
-     children: [ // rutas hijas
+    {path: 'dashboard' , 
+    component: PagesComponent,
+    canActivate:[AuthGuard],
+    children: [ // rutas hijas
      {path: '', component: DashboardComponent, data:{titulo:'Dashboard'}},
      {path: 'grafica1', component: Grafica1Component, data:{titulo:'Grafica'}},
      {path: 'promesas', component: PromesasComponent, data:{titulo:'Promesas'}},
